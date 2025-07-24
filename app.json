@@ -1,0 +1,74 @@
+{
+  "expo": {
+    "name": "StarterApp",
+    "slug": "StarterApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "StarterApp",
+    "backgroundColor": "#FFFFFF",
+    "splash": {
+      "backgroundColor": "#FFF5CF"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "infoPlist": {
+        "NSAdvertisingAttributionReportEndpoint": "https://adjust-skadnetwork.com"
+      },
+      "supportsTablet": false,
+      "bundleIdentifier": "com.nabiloutaous.starterapp",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "14.0"
+          }
+        }
+      ],
+      "expo-router",
+      [
+        "react-native-appsflyer",
+        {}
+      ],
+      [
+        "expo-tracking-transparency",
+        {
+          "userTrackingPermission": "This identifier will be used to understand the effectiveness of our marketing campaigns and improve our app experience."
+        }
+      ],
+      "expo-localization",
+      [
+        "expo-custom-assets",
+        {
+          "assetsPaths": [
+            "./assets/animations"
+          ]
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "7a1ba959-bc4f-4617-8c02-545a9471d7ac"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/46abdb82-b995-4991-83d3-7fb497cd45cc"
+    }
+  }
+}
